@@ -9,7 +9,8 @@
 		"vscode": "^1.44.0"
 	},
 	"categories": [
-		"Programming Languages", "Other"
+		"Programming Languages",
+		"Other"
 	],
 	"repository": {
 		"type": "git",
@@ -20,17 +21,23 @@
 	],
 	"main": "./extension.js",
 	"contributes": {
-		"commands": [{
+		"commands": [
+			{
 				"command": "save-from-context-menu.Save",
 				"title": "Save"
 			},
 			{
 				"command": "save-from-context-menu.SaveAll",
 				"title": "Save All"
+			},
+			{
+				"command": "save-from-context-menu.SaveAs",
+				"title": "Save As"
 			}
 		],
 		"menus": {
-			"editor/context": [{
+			"editor/context": [
+				{
 					"when": "editorFocus",
 					"command": "save-from-context-menu.Save",
 					"group": "savegroup"
@@ -63,5 +70,10 @@
 		"mocha": "^7.1.2",
 		"typescript": "^3.8.3",
 		"vscode-test": "^1.3.0"
+	},
+	"__metadata": {
+		"id": "f28fde09-bbea-4277-8689-fbba97eebf22",
+		"publisherDisplayName": "kosmos434",
+		"publisherId": "b4477d79-ffef-465d-a1a0-c3f0a2aa3e71"
 	}
 }

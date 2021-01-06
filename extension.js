@@ -9,6 +9,10 @@ function activate(context) {
 		vscode.commands.executeCommand('workbench.action.files.saveAll');
 	});
 
+	const SaveAs = vscode.commands.registerCommand('save-from-context-menu.SaveAll', function () {
+		vscode.commands.executeCommand('workbench.action.files.saveAs');
+	});
+
 	context.subscriptions.push(Save, SaveAll);
 }
 

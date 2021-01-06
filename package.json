@@ -3,7 +3,7 @@
 	"displayName": "Save From Context Menu",
 	"description": "Save and Save All from the context menu",
 	"icon": "images/icon.png",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "kosmos434",
 	"engines": {
 		"vscode": "^1.44.0"
@@ -38,6 +38,11 @@
 				{
 					"when": "editorFocus",
 					"command": "save-from-context-menu.SaveAll",
+					"group": "savegroup"
+				},
+				{
+					"when": "editorFocus",
+					"command": "save-from-context-menu.SaveAs",
 					"group": "savegroup"
 				}
 			]

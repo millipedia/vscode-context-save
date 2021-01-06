@@ -10,6 +10,6 @@ This extension simply adds a 'Save' and 'Save All' option to your context menu f
 ![Screenie](images/example.jpg)
 
 ## Github Link
-https://github.com/kosmos434/vscode-context-save
+https://github.com/millipedia/vscode-context-save
 
 ###### 💾

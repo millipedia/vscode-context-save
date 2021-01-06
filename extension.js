@@ -13,7 +13,7 @@ function activate(context) {
 		vscode.commands.executeCommand('workbench.action.files.saveAs');
 	});
 
-	context.subscriptions.push(Save, SaveAll);
+	context.subscriptions.push(Save, SaveAll, SaveAs);
 }
 
 exports.activate = activate;
